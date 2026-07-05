@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection System | Secure Your Digital Life</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="ph-fill ph-shield-check"></i>
+                    <span>PhishGuard</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Analyzer</a>
+                    <a href="#">About</a>
+                    <a href="#">Resources</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-badge">AI-Powered Analysis</div>
+                    <h1>Secure Your Digital Life</h1>
+                    <p>Instantly analyze suspicious links and emails to protect yourself from phishing attacks, fraud, and data theft.</p>
+                </section>
+
+                <!-- Analyzer Tool -->
+                <section class="analyzer-section">
+                    <div class="analyzer-card">
+                        
+                        <!-- Tabs -->
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="url">
+                                <i class="ph ph-link"></i> URL Analysis
+                            </button>
+                            <button class="tab-btn" data-tab="email">
+                                <i class="ph ph-envelope-open"></i> Email Analysis
+                            </button>
+                        </div>
+
+                        <!-- URL Input Area -->
+                        <div class="input-area active" id="url-area">
+                            <label for="url-input">Enter URL to analyze</label>
+                            <div class="input-group">
+                                <i class="ph ph-magnifying-glass input-icon"></i>
+                                <input type="url" id="url-input" placeholder="e.g., http://login.paypal.secure-update.com">
+                                <button class="btn btn-primary" id="analyze-url-btn">Analyze</button>
+                            </div>
+                        </div>
+
+                        <!-- Email Input Area -->
+                        <div class="input-area" id="email-area">
+                            <label for="email-input">Paste email content</label>
+                            <div class="input-group textarea-group">
+                                <textarea id="email-input" rows="5" placeholder="Paste the suspicious email text here..."></textarea>
+                            </div>
+                            <button class="btn btn-primary full-width" id="analyze-email-btn">Analyze Content</button>
+                        </div>
+
+                        <!-- Results Area (Hidden by default) -->
+                        <div class="results-area" id="results-area">
+                            <div class="results-header" id="results-header">
+                                <div class="status-icon" id="status-icon">
+                                    <i class="ph-fill ph-check-circle"></i>
+                                </div>
+                                <div class="status-text">
+                                    <h2 id="status-title">Safe</h2>
+                                    <p id="status-desc">No obvious phishing indicators found.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="indicators-section" id="indicators-section">
+                                <h3>Analysis Details</h3>
+                                <ul class="indicators-list" id="indicators-list">
+                                    <!-- List items injected by JS -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <!-- Info Grid -->
+                <section class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="ph ph-lock-key"></i></div>
+                        <h3>Privacy First</h3>
+                        <p>Your inputs are analyzed securely within your browser. We don't store or share your data.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="ph ph-lightning"></i></div>
+                        <h3>Real-time Checks</h3>
+                        <p>Instant evaluation against common phishing patterns and social engineering tactics.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="ph ph-shield-warning"></i></div>
+                        <h3>Stay Protected</h3>
+                        <p>Learn to spot red flags like suspicious domains, urgency cues, and hidden links.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <i class="ph-fill ph-shield-check"></i> PhishGuard
+                </div>
+                <p class="footer-text">Built for educational and protection purposes.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
