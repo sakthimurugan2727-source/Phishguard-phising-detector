@@ -20,6 +20,16 @@ PhishGuard is a clean, modern, client-side web application designed to help user
 - **Risk Assessment Levels**: Displays clear results with dynamic risk levels (Safe, Low Risk, Medium Risk, High Risk) accompanied by actionable breakdown points explaining why the content was flagged.
 - **Beautiful User Interface**: Built using modern design principles, responsive layout, rich typography (Inter), and clear icons (Phosphor Icons).
 
+## Tech Stack
+
+The application is purely frontend-based and built using the following technologies:
+
+- **HTML5**: Semantic web markup.
+- **CSS3**: Vanilla CSS utilizing modern properties (CSS custom properties/variables, Flexbox, CSS Grid) for a premium glassmorphic interface.
+- **JavaScript (ES6+)**: Client-side analysis logic implementing regular expressions and string matching heuristics.
+- **Phosphor Icons**: Library of icons for visual indicators.
+- **Google Fonts (Inter)**: High-quality typography.
+
 ## Getting Started
 
 Since this is a client-side web application, no server-side installation or dependencies are required.
